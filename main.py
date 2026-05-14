@@ -16,7 +16,10 @@ for q in questions:  # To iterate over the questions
     for i, options in enumerate(q["Options"], start=1):  # To iterate over the options
         print(f"{i}. {options}")
     user_answer = input("Enter Your Answer here: ")
-    selected_option = q["Options"][int(user_answer) - 1]
+    if user_answer in ["1", "2", "3", "4"]:
+        selected_option = q["Options"][int(user_answer) - 1]
+    else:
+        selected_option = user_answer
     if selected_option == q["Answer"]:
         print("Correct!")
         score += 1
