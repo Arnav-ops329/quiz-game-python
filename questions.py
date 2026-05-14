@@ -23,7 +23,7 @@ questions = [
     },
     {
         "Question": "Who owns Java now ?",
-        "Options:": ["Google", "Sun Microsystems", "Oracle", "BlackRock"],
+        "Options": ["Google", "Sun Microsystems", "Oracle", "BlackRock"],
         "Answer": "Oracle",
     },
 ]
