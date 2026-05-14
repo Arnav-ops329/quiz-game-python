@@ -10,10 +10,10 @@ print(
 input()
 
 score = 0  # To set the score of the user to zero
-for q in questions:  # To iterate over the questions
+for q in questions:
     print("\n" + q["Question"])
 
-    for i, options in enumerate(q["Options"], start=1):  # To iterate over the options
+    for i, options in enumerate(q["Options"], start=1):
         print(f"{i}. {options}")
     user_answer = input("Enter Your Answer here: ")
     if user_answer in ["1", "2", "3", "4"]:
