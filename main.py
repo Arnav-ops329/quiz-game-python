@@ -9,10 +9,9 @@ print(
 )
 input()
 
-score= 0 #To set the score of the user to zero
+score = 0  # To set the score of the user to zero
 for q in questions:
-    print("\n"+ q["Question"])
+    print("\n" + q["Question"])
 
-    for i, options in enumerate(q["Options", start= 1]):
+    for i, options in enumerate(q["Options"], start=1):
         print(f"{i}. {options}")
-        
